@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropiedadesA1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">PropiedadesA1</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">PropiedadesA1</h1>
+              
+            </header>
+
+            <nav>
+                <div id="informacion-usuario">
+                    <h2>Información del Usuario Aleatorio</h2>
+                    <p><strong>Nombre:</strong> <span id="nombre-usuario"></span></p>
+                    <p><strong>Correo electrónico:</strong> <span id="correo-usuario"></span></p>
+                </div>
+                
+                <ul class="menu">
+                    <p class="texto-footer" id="fecha-argentina"></p>
+                    <li>
+                        <input type="text" id="input-busqueda" class="boton-menu boton-categoria active" placeholder="Buscar productos...">
+                    </li>
+                  
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos </button>
+                    </li>
+                    <li>
+                        <button id="apartamentos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Apartamento</button>
+                    </li>
+                    <li>
+                        <button id="casas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Casas</button>
+                    </li>
+                    <li>
+                        <button id="lotes" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Lote</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <p class="texto-footer">© 2023 Jose Gomez Frontend Developer</p>
+           </div>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="row-md-3">
+                    <div class="col-12">
+                        <p class="text-center text-white" >© 2023 Jose Gomez - Todos los derechos reservados</p>
+                    </div>
+                    <h5>Síguenos</h5>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="bi bi-facebook"></i></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="bi bi-twitter"></i></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="bi bi-instagram"></i></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+               
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
